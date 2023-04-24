@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\common.props"></Import>
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <AssemblyName>Lockthreat.Application</AssemblyName>
+    <PackageId>Lockthreat.Application</PackageId>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace>Lockthreat</RootNamespace>
+    <LangVersion>7.2</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Meetings\MeetingAppService.cs~RF83dc5391.TMP" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.EntityFrameworkCore.EFPlus" Version="5.4.0" />
+    <PackageReference Include="ClosedXML" Version="0.95.2" />
+    <PackageReference Include="EPPlus" Version="5.1.2" />
+    <PackageReference Include="NPOI" Version="2.4.1" />
+    <PackageReference Include="WindowsAzure.Storage" Version="9.3.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lockthreat.Application.Shared\Lockthreat.Application.Shared.csproj" />
+    <ProjectReference Include="..\Lockthreat.Core\Lockthreat.Core.csproj" />
+    <ProjectReference Include="..\Lockthreat.EntityFrameworkCore\Lockthreat.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+</Project>

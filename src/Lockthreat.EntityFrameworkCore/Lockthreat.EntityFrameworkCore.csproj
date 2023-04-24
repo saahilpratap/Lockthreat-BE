@@ -1,0 +1,64 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\common.props"></Import>
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <RootNamespace>Lockthreat</RootNamespace>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+    <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <LangVersion>7.2</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Migrations\20200305145558_Add_Dynamic_Entity_Parameters.cs" />
+    <Compile Remove="Migrations\20200305145558_Add_Dynamic_Entity_Parameters.Designer.cs" />
+    <Compile Remove="Migrations\20200424110306_Added-Table-BusinessUnit.cs" />
+    <Compile Remove="Migrations\20200424110306_Added-Table-BusinessUnit.Designer.cs" />
+    <Compile Remove="Migrations\20200424110437_Added-Table-BusinessUnits.cs" />
+    <Compile Remove="Migrations\20200424110437_Added-Table-BusinessUnits.Designer.cs" />
+    <Compile Remove="Migrations\20200424135648_Added-Table-AuthoratativeDocuments.cs" />
+    <Compile Remove="Migrations\20200424135648_Added-Table-AuthoratativeDocuments.Designer.cs" />
+    <Compile Remove="Migrations\20200424135902_Added-Table-AuthoratativeDocuments.cs" />
+    <Compile Remove="Migrations\20200424135902_Added-Table-AuthoratativeDocuments.Designer.cs" />
+    <Compile Remove="Migrations\20200424144011_Added-Table-AssetInformation.cs" />
+    <Compile Remove="Migrations\20200424144011_Added-Table-AssetInformation.Designer.cs" />
+    <Compile Remove="Migrations\20200424151222_Added-Table-Audits.cs" />
+    <Compile Remove="Migrations\20200424151222_Added-Table-Audits.Designer.cs" />
+    <Compile Remove="Migrations\20200424151403_Added-Table-Audit.cs" />
+    <Compile Remove="Migrations\20200424151403_Added-Table-Audit.Designer.cs" />
+    <Compile Remove="Migrations\20200424162231_Added-Table-Audits.cs" />
+    <Compile Remove="Migrations\20200424162231_Added-Table-Audits.Designer.cs" />
+    <Compile Remove="Migrations\20200424162943_Added-Table-AuditAttacments.cs" />
+    <Compile Remove="Migrations\20200424162943_Added-Table-AuditAttacments.Designer.cs" />
+    <Compile Remove="Migrations\20200424173411_Added-Table-AuthoratativeDocuments.cs" />
+    <Compile Remove="Migrations\20200424173411_Added-Table-AuthoratativeDocuments.Designer.cs" />
+    <Compile Remove="Migrations\20200424174238_Added-Table-AuthoratativeDocuments.cs" />
+    <Compile Remove="Migrations\20200424174238_Added-Table-AuthoratativeDocuments.Designer.cs" />
+    <Compile Remove="Migrations\20200424185415_Added-Table-VendorProductsServices.cs" />
+    <Compile Remove="Migrations\20200424185415_Added-Table-VendorProductsServices.Designer.cs" />
+    <Compile Remove="Migrations\20200425033254_Added-Table-ITServices.cs" />
+    <Compile Remove="Migrations\20200425033254_Added-Table-ITServices.Designer.cs" />
+    <Compile Remove="Migrations\20200425050846_Added-Table-ITServiceContract.cs" />
+    <Compile Remove="Migrations\20200425050846_Added-Table-ITServiceContract.Designer.cs" />
+    <Compile Remove="Migrations\20200429091102_Added-filed-BusinessUnit-EmployeeId.cs" />
+    <Compile Remove="Migrations\20200429091102_Added-filed-BusinessUnit-EmployeeId.Designer.cs" />
+    <Compile Remove="Migrations\20200429091457_Added-filed-BusinessUnit-EmployeeId.cs" />
+    <Compile Remove="Migrations\20200429091457_Added-filed-BusinessUnit-EmployeeId.Designer.cs" />
+    <Compile Remove="Migrations\20200527044738_Update-table-name-FindingBusinessUnits.cs" />
+    <Compile Remove="Migrations\20200527044738_Update-table-name-FindingBusinessUnits.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lockthreat.Core\Lockthreat.Core.csproj" />
+  </ItemGroup>
+</Project>

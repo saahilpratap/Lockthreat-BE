@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\..\common.props"></Import>
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Lockthreat</RootNamespace>
+    <LangVersion>7.2</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="CodeGenerators\**" />
+    <EmbeddedResource Remove="CodeGenerators\**" />
+    <None Remove="CodeGenerators\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="OrganizationSetup\Dto\LevelTypeDto.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.Web.Common" Version="5.4.0" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lockthreat.Core.Shared\Lockthreat.Core.Shared.csproj" />
+  </ItemGroup>
+</Project>
